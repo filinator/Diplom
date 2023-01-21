@@ -16,8 +16,6 @@ const Header: FC = () => {
 
     const navigate = useNavigate()
     const location = useLocation()
-    const dispatch = useDispatch()
-
 
     const handleSearchQueryChange = async (event: ChangeEvent<HTMLInputElement>) => {
         setSearchQuery(event.target.value);
@@ -38,7 +36,6 @@ const Header: FC = () => {
             <Logo onClick={handleLogoOnClick}/>
             <Search query={searchQuery} onChange={handleSearchQueryChange} onSubmit={handleSearch}/> 
             <DefaultInfo onClick={handleDefaultInfoOnClick}/>
-            
         </header>
     );
 };

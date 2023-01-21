@@ -12,6 +12,7 @@ import Main from "../pages/Main/Main";
 // import ResetPasswordPage from "../pages/ResetPasswordPage/ResetPasswordPage";
 // import SettingsPage from "../pages/SettingsPage/SettingsPage";
 import TrendsPage from "../pages/TrendsPage/TrendsPage";
+import SettingsPage from "../pages/SettingsPage/SettingsPage";
 // import FavoritesPage from "../pages/FavoritesPage/FavoritesPage";
 // import SearchPage from "../pages/SearchPage/SearchPage";
 
@@ -47,7 +48,7 @@ export const PUBLIC_ROUTES: IRoute[] = [
     {path: Routes.trends, Element: TrendsPage},
     // {path: Routes.favorites, Element: FavoritesPage},
     // {path: Routes.resetPasswordSuccess, Element: SignInPage, title: "Success"},
-    // {path: Routes.settings, Element: SettingsPage, title: "Settings"},
+    {path: Routes.settings, Element: SettingsPage, title: "Settings"},
     // {path: Routes.search, Element: SearchPage},
 ]
 

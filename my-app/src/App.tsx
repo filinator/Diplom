@@ -9,13 +9,13 @@ import AppRouter from "./components/AppRouter/AppRouter";
 import Header from './components/common/Header/Header';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-        <MainWrapper>
-            <AppRouter/>
-        </MainWrapper>
-    </div>
+    return (
+        <div className="App">
+            <Header />
+            <MainWrapper>
+                <AppRouter/>
+            </MainWrapper>
+        </div>
   );
 }
 
