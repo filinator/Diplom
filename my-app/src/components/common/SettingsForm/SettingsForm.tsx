@@ -6,7 +6,6 @@ import {InputProps} from "../../../types/formElements";
 import Input from "../Input/Input";
 import Button, {ButtonVariantProps} from "../Button/Button";
 import ThemeSwitcher from "./ThemeSwitcher/ThemeSwitcher";
-import {ThemeVariant} from "../../../context/ThemeContext";
 
 
 export interface ISettingsFormProps {

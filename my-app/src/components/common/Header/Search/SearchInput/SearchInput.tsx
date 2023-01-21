@@ -1,9 +1,9 @@
 import React, {ChangeEventHandler, FC, FormEventHandler, MouseEventHandler, useState} from 'react';
 import search from "../../../../../assets/search.svg"
-import FilterMenu from '../../FilterMenu/FilterMenu';
 
 // @ts-ignore
 import styles from "./SearchInput.module.css";
+import {ThemeVariant, useTheme} from "../../../../../context/ThemeContext";
 
 interface SearchInputProps {
     query: string
@@ -17,7 +17,7 @@ const SearchInput: FC<SearchInputProps> = ({ query, onChange, onSubmit, }) => {
     const handleToggleBurgerMenu = (e:any) => {
         setOpen(prevState => !prevState);
     }
-    
+    const {theme} = useTheme()
     return (
         <form onSubmit={onSubmit} className={styles.searchInputWrapper}>
             <input

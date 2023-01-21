@@ -12,7 +12,7 @@ interface SearchProps {
     onSubmit: FormEventHandler<HTMLFormElement>
 }
 
-const Search: FC<SearchProps> = ({theme, query = "", onChange, onSubmit}) => {
+const Search: FC<SearchProps> = ({query = "", onChange, onSubmit}) => {
     const [open, setOpen] = useState<boolean>(false);
     const navigate = useNavigate()
     const handleClose = () => navigate(`/blog/`)

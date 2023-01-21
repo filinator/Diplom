@@ -1,4 +1,6 @@
 import React, {FC} from 'react';
+import { useNavigate } from "react-router-dom";
+import { ThemeVariant, useTheme } from "../../../../context/ThemeContext";
 
 import styles from "./PostCard.module.css"
 
@@ -30,11 +32,13 @@ export interface PostCardProps {
     postCard: IPostCard
 }
 
-const PostList: FC <PostCardProps> = ({postCard}) => {
+const PostCard: FC <PostCardProps> = ({postCard}) => {
+    const navigate = useNavigate();
+    const {theme} = useTheme()
 
-    const postCardTheme = true
+    const postCardTheme = theme === ThemeVariant.light
 
-    const handlePostCardOpen = () => {}
+    const handlePostCardOpen = () => navigate(`/main/${postCard.filmId || postCard.kinopoiskId}`);
 
     return (
         <div className={styles.postcardContainer}>
@@ -49,4 +53,4 @@ const PostList: FC <PostCardProps> = ({postCard}) => {
     );
 };
 
-export default PostList;
+export default PostCard;

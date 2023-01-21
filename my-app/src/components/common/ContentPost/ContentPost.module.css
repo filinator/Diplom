@@ -1,0 +1,154 @@
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 81.5%;
+}
+
+.contentPost {
+    display: flex;
+}
+
+.contentPoster {
+    padding: 0 42px 32px 0;
+}
+
+.contentPosterImg {
+    height: 356px;
+    width: 266px;
+    border-radius: 20px;
+}
+
+.contentDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentGenres {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AFB2B6;
+    text-transform: capitalize;
+}
+
+.contentTitle {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.darkContentTitle {
+    color: #242426;
+}
+
+.contentRating {
+    display: flex;
+    margin: 24px 0 40px;
+}
+
+.contentInfoBlock {
+    margin: 40px 0 56px;
+}
+
+.contentRatingKinopoisk {
+    background-color: #00A340;
+    border-radius: 6px;
+    padding: 2px 8px;
+    color: #FFFFFF;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contentRatingImbd, .contentLength {
+    background: #323537;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contentRatingImbd {
+    margin: 0 20px;
+}
+
+.contentRatingImbd img{
+    margin-right: 10px;
+}
+
+.contentDescription, .contentInfoRigthBlock {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    max-width: 878px;
+}
+
+.darkContentDescription {
+    color: #242426;
+}
+
+.contentInfoBlock {
+    display: flex;
+}
+.contentInfoLeftBlock {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AFB2B6;
+    width: 150px;
+}
+
+.darkContentRigthBlock p{
+    color: #242426;
+}
+
+.contentSlider {
+    align-items: flex-end;
+}
+
+.contentPostMore, .contentPostFrame {
+    width: 132px;
+    background: #323537;
+    padding: 19px 0;
+    text-align: center;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.contentPostMore {
+    border-radius: 10px 0 0 10px;
+}
+
+.contentPostFrame {
+    border-radius: 0 10px 10px 0;
+}
+
+.contentInfoLeftBlock:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contentInfoRigthBlock:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: end;
+}
+

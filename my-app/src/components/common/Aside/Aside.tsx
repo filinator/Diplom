@@ -2,6 +2,8 @@ import React, {FC, useEffect, useState} from 'react';
 
 import Tabs from "./Tabs/Tabs";
 import {TABS_CONFIG} from "./Tabs/TabsConfig";
+import Footer from "./Tabs/Footer/Footer";
+import styles from "./Aside.module.css"
 import {useLocation, useNavigate} from "react-router-dom";
 import {Routes} from "../../../constants/routes";
 
@@ -54,8 +56,9 @@ const Aside: FC = () => {
     }, [location]);
 
     return (
-        <div>
-            <Tabs config={TABS_CONFIG} onClick={handleSetActiveTabItem} activeTabItem={activeTabItem}></Tabs>
+        <div className={styles.asideWrapper}>
+            <Tabs config={TABS_CONFIG} onClick={handleSetActiveTabItem} activeTabItem={activeTabItem}/>
+            <Footer/>
         </div>
     );
 };

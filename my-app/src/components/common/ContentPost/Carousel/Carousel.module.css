@@ -1,0 +1,49 @@
+.windowCarousel {
+    overflow: hidden;
+}
+
+.allItemsContainer {
+    display: flex;
+}
+
+.carouselTitle {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.darkCarouselTitle {
+    color: #242426;
+}
+
+.carouselItems {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    max-width: 95%;
+}
+
+.carouselContainer {
+    width: 80%;
+}
+
+.carouselArrowLeft, .carouselArrowRigth {
+    background: none;
+    border: none;
+    cursor: pointer;
+    stroke: #FFFFFF;
+    align-items: center;
+}
+
+.darkCarouselActions svg {
+    stroke: #242426;
+}
+
+.carouselActions {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}

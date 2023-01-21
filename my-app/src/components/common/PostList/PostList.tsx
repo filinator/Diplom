@@ -1,15 +1,15 @@
 import React, {FC} from 'react';
+import Button from "../Button/Button";
 import PostCard, {IPostCard} from "./PostCard/PostCard";
 
 import styles from "./PostList.module.css"
-import Button from "../Button/Button";
 
 export interface PostListProps {
     postCards: IPostCard[]
     onClick?: () => void
 }
 
-const PostList:FC <PostListProps>  = ({postCards, onClick}) => {
+const PostList: FC<PostListProps>  = ({postCards=[], onClick}) => {
     return (
         <div className={styles.postList}>
             <div className={styles.postListContainer}>

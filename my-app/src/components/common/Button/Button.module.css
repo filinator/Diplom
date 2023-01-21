@@ -6,11 +6,9 @@
     border: unset;
     cursor: pointer;
     white-space: nowrap;
-
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
-
     transition: 0.2s;
 }
 

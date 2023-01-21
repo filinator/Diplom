@@ -8,12 +8,13 @@ import Search from "./Search/Search";
 import Logo from "./Logo/Logo";
 import {Routes} from "../../../constants/routes";
 import DefaultInfo from "./DefaultInfo/DefaultInfo";
-import {useDispatch} from "react-redux";
+import {ThemeVariant, useTheme} from "../../../context/ThemeContext";
 
 const Header: FC = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [open, setOpen] = useState<boolean>(false);
 
+    const {theme} = useTheme()
     const navigate = useNavigate()
     const location = useLocation()
 
@@ -32,7 +33,8 @@ const Header: FC = () => {
     }
 
     return (
-        <header className={`${styles.headerWrapper}`}>
+        <header className={`${styles.headerWrapper}
+            ${theme === ThemeVariant.light ? styles.headerWhiteWrapper : ""}`}>
             <Logo onClick={handleLogoOnClick}/>
             <Search query={searchQuery} onChange={handleSearchQueryChange} onSubmit={handleSearch}/> 
             <DefaultInfo onClick={handleDefaultInfoOnClick}/>
