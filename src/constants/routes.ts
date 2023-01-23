@@ -7,7 +7,7 @@ import Content from "../pages/ContentPages/ContentPages";
 import Main from "../pages/Main/Main";
 import SettingsPage from "../pages/SettingsPage/SettingsPage";
 import TrendsPage from "../pages/TrendsPage/TrendsPage";
-// import FavoritesPage from "../pages/FavoritesPage/FavoritesPage";
+import FavoritesPage from "../pages/FavoritesPage/FavoritesPage";
 import SearchPage from "../pages/SearchPage/SearchPage";
 
 // @ts-ignore
@@ -36,7 +36,7 @@ export const PUBLIC_ROUTES: IRoute[] = [
     {path: Routes.main, Element: Main, title: "Main"},
     {path: Routes.content, Element: Content, title: 'Films'},
     {path: Routes.trends, Element: TrendsPage},
-    // {path: Routes.favorites, Element: FavoritesPage},
+    {path: Routes.favorites, Element: FavoritesPage},
     {path: Routes.settings, Element: SettingsPage, title: "Settings"},
     {path: Routes.search, Element: SearchPage},
 ]
